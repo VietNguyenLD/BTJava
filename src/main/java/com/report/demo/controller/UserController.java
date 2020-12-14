@@ -56,7 +56,7 @@ public class UserController {
     }
 
     /* DELETE BY ID */
-    @GetMapping("/delete/{id}")
+    @GetMapping("user/delete/{id}")
     public ResponseEntity<ServiceResult> deleteUser(@PathVariable int id) {
         return new ResponseEntity<ServiceResult>(service.deleteUser(id), HttpStatus.OK);
     }
